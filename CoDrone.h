@@ -1009,53 +1009,53 @@ public:
 
 //------------------------------------------------------------------------------------//
 
-	byte receiveAttitudeSuccess;
-	byte receiveRangeSuccess;
-	byte receiveGyroSuccess;
-	byte receiveAccelSuccess;
-	byte receivePressureSuccess;
-	byte receiveTrimSuccess;
-	byte receiveStateSuccess;
-	byte receiveBatterySuccess;
-	byte receiveOptSuccess;
+	static byte receiveAttitudeSuccess;
+	static byte receiveRangeSuccess;
+	static byte receiveGyroSuccess;
+	static byte receiveAccelSuccess;
+	static byte receivePressureSuccess;
+	static byte receiveTrimSuccess;
+	static byte receiveStateSuccess;
+	static byte receiveBatterySuccess;
+	static byte receiveOptSuccess;
 
 //------------------------------------------------------------------------------------//
 
-	int roll;
-	int pitch;
-	int yaw;
-	int throttle;
+	static int roll;
+	static int pitch;
+	static int yaw;
+	static int throttle;
 
-	int attitudeRoll;
-	int attitudePitch;
-	int attitudeYaw;
+	static int attitudeRoll;
+	static int attitudePitch;
+	static int attitudeYaw;
 
-	int batteryPercent;
-	int batteryVoltage;
+	static int batteryPercent;
+	static int batteryVoltage;
 
-	long fVelocitySumX ;
-	long fVelocitySumY;
+	static long fVelocitySumX ;
+	static long fVelocitySumY;
 
-	long temperature;
-	long pressure	;
+	static long temperature;
+	static long pressure	;
 
-	int ImuAccX;
-	int ImuAccY;
-	int ImuAccZ;
+	static int ImuAccX;
+	static int ImuAccY;
+	static int ImuAccZ;
 
-	int ImuGyroRoll	;
-	int ImuGyroPitch;
-	int ImuGyroYaw	;
+	static int ImuGyroRoll	;
+	static int ImuGyroPitch;
+	static int ImuGyroYaw	;
 
-	int ImuAngleRoll;
-	int ImuAnglePitch;
-	int ImuAngleYaw	;
+	static int ImuAngleRoll;
+	static int ImuAnglePitch;
+	static int ImuAngleYaw	;
 
-	int TrimAll_Roll;
-	int TrimAll_Pitch;
-	int TrimAll_Yaw;
-	int TrimAll_Throttle;
-	int TrimAll_Wheel;
+	static int TrimAll_Roll;
+	static int TrimAll_Pitch;
+	static int TrimAll_Yaw;
+	static int TrimAll_Throttle;
+	static int TrimAll_Wheel;
 
 //------------------------------------------------------------------------------------//
 
@@ -1071,18 +1071,18 @@ public:
 	int SendInterval; //millis seconds
 	int analogOffset;
 
-	byte displayMode;	//smar inventor : default 1
+	static byte displayMode;	//smar inventor : default 1
 
-	boolean pairing;
-	boolean	isConnectedBefore;
+	static boolean pairing;
+	static boolean	isConnectedBefore;
 	
-	byte timeOutRetry;
-	byte sendCheckCount;
-	byte sendCheckFlag;
-	byte energy;
-	byte team;
+	static byte timeOutRetry;
+	static byte sendCheckCount;
+	static byte sendCheckFlag;
+	static byte energy;
+	static byte team;
 	
-	unsigned long weapon;
+	static unsigned long weapon;
 
 //------------------------------------------------------------------------------------//
 	//for CodeLoader
@@ -1090,31 +1090,31 @@ public:
 	boolean sendDataControl;
 	
 //------------------------------------------------------------------------------------//
-	byte linkState;
-	int rssi;
-	byte battery;
+	static byte linkState;
+	static int rssi;
+	static byte battery;
 	unsigned long	irMessageReceive;
 	byte droneState[7];
 	int sensorRange[6];
 	long PreviousMillis;
 
-	byte armred;
-	byte armgreen;
-	byte armblue;
-	byte eyered;
-	byte eyegreen;
-	byte eyeblue;
-	byte armmode;
-	byte eyemode;
+	static byte armred;
+	static byte armgreen;
+	static byte armblue;
+	static byte eyered;
+	static byte eyegreen;
+	static byte eyeblue;
+	static byte armmode;
+	static byte eyemode;
 
 private:
 	long PreviousBuzz;
 	long timeOutSendPreviousMillis;
 	
-	byte discoverFlag;
-	byte connectFlag;
+	static byte discoverFlag;
+	static byte connectFlag;
 
-	byte devCount;
+	static byte devCount;
 	byte devFind[5];
 
 	int devRSSI[5];
