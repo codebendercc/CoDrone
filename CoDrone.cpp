@@ -50,11 +50,11 @@ int CoDroneClass::ImuAngleRoll	= 0;
 int CoDroneClass::ImuAnglePitch	= 0;
 int CoDroneClass::ImuAngleYaw		= 0;
 
-int CoDroneClass::TrimAll_Roll;
-int CoDroneClass::TrimAll_Pitch;
-int CoDroneClass::TrimAll_Yaw;
-int CoDroneClass::TrimAll_Throttle;
-int CoDroneClass::TrimAll_Wheel;
+int CoDroneClass::TrimAll_Roll = 0;
+int CoDroneClass::TrimAll_Pitch = 0;
+int CoDroneClass::TrimAll_Yaw = 0;
+int CoDroneClass::TrimAll_Throttle = 0;
+int CoDroneClass::TrimAll_Wheel = 0;
 
 byte CoDroneClass::displayMode = 1;	//smar inventor : default 1
 
