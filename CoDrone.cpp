@@ -88,7 +88,7 @@ byte CoDroneClass::devCount = 0;
 
 void CoDroneClass::begin(long	baud)
 {
-	DRONE_SERIAL.begin(baud);							// µÂ∑–∞˙	≈ÎΩ≈ ∞≥Ω√	(115200bps)
+	DRONE_SERIAL.begin(baud);							// ¬µ√•¬∑√ê¬∞√∫	√Ö√´¬Ω√Ö ¬∞¬≥¬Ω√É	(115200bps)
 	#if	defined(FIND_HWSERIAL1)
 		DEBUG_SERIAL.begin(baud);						// Serial	Debug	Begin	(115200bps)
 		displayMode	=	0;										// LED Display 0 = BOARD LED 0FF,	1	=	BOARD	LED	ON
@@ -133,7 +133,7 @@ void CoDroneClass::Send_Discover(byte	action)
 void CoDroneClass::AutoConnect()								// NearbyDrone or ConnectedDrone
 {
 	pinMode(10, INPUT_PULLUP);    								//DipSw3
-  if (!digitalRead(10))	 isConnectedBefore = false;		//DipSw3 down °È
+  if (!digitalRead(10))	 isConnectedBefore = false;		//DipSw3 down ¬°√©
   
   if(isConnectedBefore)	AutoConnect(ConnectedDrone);  
   else AutoConnect(NearbyDrone);  
@@ -483,20 +483,20 @@ void CoDroneClass::ReceiveEventCheck(byte	_completeData[])
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimAll)
 	{
-		TrimAll_Roll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		TrimAll_Pitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		TrimAll_Yaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
-		TrimAll_Wheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
+		CoDroneClass::TrimAll_Roll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		CoDroneClass::TrimAll_Pitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		CoDroneClass::TrimAll_Yaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		CoDroneClass::TrimAll_Wheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
 
 	}
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimFlight)		//
 	{
-		TrimAll_Roll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		TrimAll_Pitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		TrimAll_Yaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		CoDroneClass::TrimAll_Roll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		CoDroneClass::TrimAll_Pitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		CoDroneClass::TrimAll_Yaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
 
 		receiveTrimSuccess = 1;
 
