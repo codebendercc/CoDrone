@@ -50,6 +50,12 @@ int CoDroneClass::ImuAngleRoll	= 0;
 int CoDroneClass::ImuAnglePitch	= 0;
 int CoDroneClass::ImuAngleYaw		= 0;
 
+int CoDroneClass::TrimAll_Roll;
+int CoDroneClass::TrimAll_Pitch;
+int CoDroneClass::TrimAll_Yaw;
+int CoDroneClass::TrimAll_Throttle;
+int CoDroneClass::TrimAll_Wheel;
+
 byte CoDroneClass::displayMode = 1;	//smar inventor : default 1
 
 boolean CoDroneClass::pairing = false;
@@ -483,20 +489,20 @@ void CoDroneClass::ReceiveEventCheck(byte	_completeData[])
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimAll)
 	{
-		int CoDroneClass::TrimAll_Roll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		int CoDroneClass::TrimAll_Pitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		int CoDroneClass::TrimAll_Yaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		int CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
-		int CoDroneClass::TrimAll_Wheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
+		TrimAll_Roll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		TrimAll_Pitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		TrimAll_Yaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		TrimAll_Wheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
 
 	}
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimFlight)		//
 	{
-		int CoDroneClass::TrimAll_Roll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		int CoDroneClass::TrimAll_Pitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		int CoDroneClass::TrimAll_Yaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		int CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		TrimAll_Roll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		TrimAll_Pitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		TrimAll_Yaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
 
 		receiveTrimSuccess = 1;
 
