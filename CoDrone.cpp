@@ -483,20 +483,20 @@ void CoDroneClass::ReceiveEventCheck(byte	_completeData[])
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimAll)
 	{
-		CoDroneClass::TrimAll_Roll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		CoDroneClass::TrimAll_Pitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		CoDroneClass::TrimAll_Yaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
-		CoDroneClass::TrimAll_Wheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
+		int CoDroneClass::TrimAll_Roll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		int CoDroneClass::TrimAll_Pitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		int CoDroneClass::TrimAll_Yaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		int CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		int CoDroneClass::TrimAll_Wheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
 
 	}
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimFlight)		//
 	{
-		CoDroneClass::TrimAll_Roll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		CoDroneClass::TrimAll_Pitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		CoDroneClass::TrimAll_Yaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		int CoDroneClass::TrimAll_Roll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		int CoDroneClass::TrimAll_Pitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		int CoDroneClass::TrimAll_Yaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		int CoDroneClass::TrimAll_Throttle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
 
 		receiveTrimSuccess = 1;
 
