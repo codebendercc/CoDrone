@@ -9,6 +9,8 @@
 #include <EEPROM.h>
 #include <iostream>
 
+using namespace std;
+
 CoDroneClass CoDrone;
 
 byte CoDroneClass::receiveAttitudeSuccess = 0;
