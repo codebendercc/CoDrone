@@ -507,7 +507,8 @@ void CoDroneClass::ReceiveEventCheck(byte _completeData[])
 
 		receiveTrimSuccess = 1;
 
-*/	}
+	}
+	*/
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimDrive)
 	{
