@@ -177,10 +177,10 @@ trimdata CoDroneClass::getTrim()
 	ReceiveGetData(Req_TrimFlight);
 
 	trimdata result;
-	result.roll = TrimAll_Roll;
-	result.pitch = TrimAll_Pitch;
-	result.yaw = TrimAll_Yaw;
-	result.throttle = TrimAll_Throttle;
+	result.roll = TrimAllRoll;
+	result.pitch = TrimAllPitch;
+	result.yaw = TrimAllYaw;
+	result.throttle = TrimAllThrottle;
 
 	return result;
 }
