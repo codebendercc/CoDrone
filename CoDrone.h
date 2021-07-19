@@ -1052,13 +1052,13 @@ public:
 	static int ImuAngleRoll;
 	static int ImuAnglePitch;
 	static int ImuAngleYaw	;
-
+/*
 	static int TrimAllRoll;
 	static int TrimAllPitch;
 	static int TrimAllYaw;
 	static int TrimAllThrottle;
 	static int TrimAllWheel;
-
+*/
 //------------------------------------------------------------------------------------//
 
 	byte cmdBuff[MAX_PACKET_LENGTH];
