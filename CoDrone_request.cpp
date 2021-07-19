@@ -2,6 +2,12 @@
 #include "Arduino.h"
 #include <EEPROM.h>
 
+int CoDroneClass::TrimAllRoll = 0;
+int CoDroneClass::TrimAllPitch = 0;
+int CoDroneClass::TrimAllYaw = 0;
+int CoDroneClass::TrimAllThrottle = 0;
+int CoDroneClass::TrimAllWheel = 0;
+
 //-------------------------------------------------------------------------------------------------------//
 //------------------------------------------- GetData ---------------------------------------------------//
 //-------------------------------------------------------------------------------------------------------//
