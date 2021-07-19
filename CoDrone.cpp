@@ -9,8 +9,6 @@
 #include <EEPROM.h>
 #include <iostream>
 
-using namespace std;
-
 CoDroneClass CoDrone;
 
 byte CoDroneClass::receiveAttitudeSuccess = 0;
@@ -23,7 +21,7 @@ byte CoDroneClass::receiveStateSuccess = 0;
 byte CoDroneClass::receiveBatterySuccess = 0;
 byte CoDroneClass::receiveOptSuccess = 0;
 
-int CoDroneClass::roll = 0;
+int roll = 0;
 int CoDroneClass::pitch = 0;
 int CoDroneClass::yaw = 0;
 int CoDroneClass::throttle = 0;
