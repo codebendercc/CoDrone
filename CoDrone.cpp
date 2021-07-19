@@ -7,7 +7,7 @@
 #include "CoDrone.h"
 #include "Arduino.h"
 #include <EEPROM.h>
-#include <iostream>
+
 
 CoDroneClass CoDrone;
 
@@ -55,7 +55,7 @@ int CoDroneClass::TrimAll_Roll = 0;
 int CoDroneClass::TrimAll_Pitch = 0;
 int CoDroneClass::TrimAll_Yaw = 0;
 int CoDroneClass::TrimAll_Throttle = 0;
-int CoDroneClass::TrimAllWheel = 0;
+int CoDroneClass::TrimAll_Wheel = 0;
 
 byte CoDroneClass::displayMode = 1;	//smar inventor : default 1
 
@@ -488,7 +488,7 @@ void CoDroneClass::ReceiveEventCheck(byte _completeData[])
 
 	}
 //---------------------------------------------------------------------------------------------//
-/*	else if	(receiveDtype	== dType_TrimAll)
+	else if	(receiveDtype	== dType_TrimAll)
 	{
 		TrimAllRoll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
 		TrimAllPitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
@@ -508,7 +508,7 @@ void CoDroneClass::ReceiveEventCheck(byte _completeData[])
 		receiveTrimSuccess = 1;
 
 	}
-	*/
+	
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimDrive)
 	{
