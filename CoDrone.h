@@ -1052,6 +1052,8 @@ public:
 	static int ImuAngleRoll;
 	static int ImuAnglePitch;
 	static int ImuAngleYaw	;
+	
+	static int TrimAll;
 /*
 	static int TrimAllRoll;
 	static int TrimAllPitch;
