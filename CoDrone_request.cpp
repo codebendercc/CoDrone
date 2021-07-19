@@ -1,6 +1,9 @@
 #include "CoDrone.h"
 #include "Arduino.h"
 #include <EEPROM.h>
+#include <iostream>
+
+using namespace std;
 
 int CoDroneClass::TrimAllRoll = 0;
 int CoDroneClass::TrimAllPitch = 0;
