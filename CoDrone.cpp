@@ -486,20 +486,20 @@ void CoDroneClass::ReceiveEventCheck(byte _completeData[])
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimAll)
 	{
-		int TrimAllRoll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		int TrimAllPitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		int TrimAllYaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		int TrimAllThrottle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
-		int TrimAllWheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
+		TrimAllRoll			=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		TrimAllPitch			=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		TrimAllYaw				=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		TrimAllThrottle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		TrimAllWheel			=	((_completeData[9] <<	8) | (_completeData[8]	&	0xff));
 
 	}
 //---------------------------------------------------------------------------------------------//
 	else if	(receiveDtype	== dType_TrimFlight)		//
 	{
-		int TrimAllRoll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
-		int TrimAllPitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
-		int TrimAllYaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
-		int TrimAllThrottle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
+		TrimAllRoll		=	((_completeData[1] <<	8) | (_completeData[0]	&	0xff));
+		TrimAllPitch		=	((_completeData[3] <<	8) | (_completeData[2]	&	0xff));
+		TrimAllYaw			=	((_completeData[5] <<	8) | (_completeData[4]	&	0xff));
+		TrimAllThrottle	=	((_completeData[7] <<	8) | (_completeData[6]	&	0xff));
 
 		receiveTrimSuccess = 1;
 
