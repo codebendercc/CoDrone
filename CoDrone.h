@@ -1051,11 +1051,11 @@ public:
 	static int ImuAnglePitch;
 	static int ImuAngleYaw	;
 
-	static int TrimAllRoll;
-	static int TrimAllPitch;
-	static int TrimAllYaw;
-	static int TrimAllThrottle;
-	static int TrimAllWheel;
+	int TrimAllRoll;
+	int TrimAllPitch;
+	int TrimAllYaw;
+	int TrimAllThrottle;
+	int TrimAllWheel;
 
 //------------------------------------------------------------------------------------//
 
