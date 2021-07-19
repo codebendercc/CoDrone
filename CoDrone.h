@@ -780,7 +780,9 @@ enum Angle
 class CoDroneClass
 {
 public:
-
+	
+	CoDroneClass(void);
+	
 	//------------------------------------------------------------------------------------//
 	void begin(long baud);
 
