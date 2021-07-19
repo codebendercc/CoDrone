@@ -3,13 +3,11 @@
 #include <EEPROM.h>
 #include <iostream>
 
-using namespace std;
-
-int CoDroneClass::TrimAllRoll = 0;
-int CoDroneClass::TrimAllPitch = 0;
-int CoDroneClass::TrimAllYaw = 0;
-int CoDroneClass::TrimAllThrottle = 0;
-int CoDroneClass::TrimAllWheel = 0;
+int CoDroneClass::TrimAllRoll;
+int CoDroneClass::TrimAllPitch;
+int CoDroneClass::TrimAllYaw;
+int CoDroneClass::TrimAllThrottle;
+int CoDroneClass::TrimAllWheel;
 
 //-------------------------------------------------------------------------------------------------------//
 //------------------------------------------- GetData ---------------------------------------------------//
