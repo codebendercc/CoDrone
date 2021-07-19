@@ -172,7 +172,7 @@ acceldata CoDroneClass::getAccelerometer()
  *	return 	 	:	
  *					- result 	: int
  */
-
+/*
 trimdata CoDroneClass::getTrim()
 {
 	ReceiveGetData(Req_TrimFlight);
@@ -185,7 +185,7 @@ trimdata CoDroneClass::getTrim()
 
 	return result;
 }
-
+*/
 /*
  *	function	:	getOptFlowPosition()
  *	description : 	getOptFlowPosition() is function for get x,y position value from optical flow sensor.
